@@ -298,8 +298,50 @@ html{scroll-padding-top:105px}
 }
 @media(prefers-reduced-motion:reduce){.watermark{transition:none}}
 
+
+/* MONO ROJO V6 — ajustes evolutivos, sin reestructurar la V5 */
+.section-num{display:flex;align-items:center;gap:10px}
+.section-bullet{width:7px;height:7px;border-radius:50%;background:currentColor;display:inline-block;flex:none}
+.marquee-track{gap:0;animation:marquee 38s linear infinite;will-change:transform}
+.marquee-set{display:flex;align-items:center;gap:28px;padding-right:28px;flex:none}
+.marquee-track span{color:white;white-space:nowrap;flex:none}
+.marquee-track b{flex:none;color:#361411;font-size:clamp(14px,2.1vw,22px)}
+@media(max-width:760px){.marquee-track{animation-duration:31s}.marquee-set{gap:19px;padding-right:19px}.marquee-track span{font-size:clamp(16px,4.2vw,21px)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none;transform:none;will-change:auto}}
+.erp-service-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}
+.erp-service-chips span{display:inline-flex;font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border:1px solid rgba(255,255,255,.25);border-radius:50px;padding:8px 11px;color:#ebe3da}
+.service-body .service-scope{display:block;margin-top:14px;font-size:11px;color:#aaa49c}
+.erp-panel-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin:0 0 18px}
+.erp-panel-heading strong{font:clamp(19px,2.7vw,31px)/1.1 "Archivo Black",sans-serif;letter-spacing:-.045em}
+.erp-panel-heading p{color:#b6b0a9;font-size:13px;margin:9px 0 0}
+.erp-panel-heading>span{font-weight:900;color:var(--orange);font-size:10px;letter-spacing:.09em;text-align:right;flex:none}
+.erp-solutions-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.erp-solutions-grid .solution-card{min-height:78px;padding:18px 24px 16px 16px;font-size:13px}
+.erp-solutions-grid .solution-card:after{font-size:13px;right:9px;top:9px}
+.erp-disclaimer{color:#a8a09a;font-size:11px;margin:16px 0 0}
+.about-grid{grid-template-columns:1.08fr .92fr;gap:6vw}
+.about h2{font-size:clamp(40px,5.1vw,81px);line-height:1.05;letter-spacing:-.074em}
+.about-text .about-claim{font:clamp(17px,1.9vw,24px)/1.18 "Archivo Black",sans-serif;letter-spacing:-.035em;color:var(--cream);margin:0 0 20px}
+.about-text .about-kicker{font:clamp(16px,1.65vw,21px)/1.3 "Archivo Black",sans-serif;letter-spacing:-.04em;color:var(--cream);margin-top:23px}
+.enterprise-link{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:25px 0 0}
+.enterprise-link span{font-size:10px;letter-spacing:.065em;font-weight:800;color:var(--cream);padding:10px 11px;border:1px solid rgba(255,255,255,.3);border-radius:30px}
+.enterprise-link i{width:16px;height:1px;background:var(--red);position:relative}
+.enterprise-link i:after{content:'›';position:absolute;right:-1px;top:-10px;color:var(--red);font-style:normal;font-size:16px}
+.erp-lab-strip{display:flex;gap:12px 20px;align-items:center;flex-wrap:wrap;background:#fff9;border:1px solid #d7cec6;border-radius:11px;padding:17px 20px;margin:0 0 24px}
+.erp-lab-strip>div:first-child{flex:1 1 270px}
+.erp-lab-strip strong{font:clamp(17px,2vw,23px) "Archivo Black",sans-serif;letter-spacing:-.045em}
+.erp-lab-strip strong span{color:#aa2d24;font-size:.7em}
+.erp-lab-strip p{margin:7px 0 0;font-size:12px;color:#5a534c;line-height:1.4}
+.erp-lab-flow{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.erp-lab-flow span{font-size:9px;font-weight:900;background:#29221f;color:#fff;border-radius:50px;padding:9px 12px;letter-spacing:.045em}
+.erp-lab-flow i{color:#b12d24;font-style:normal;font-size:14px}
+.erp-lab-strip>small{flex-basis:100%;font-size:10px;letter-spacing:.04em;color:#6b615b}
+@media(max-width:900px){.erp-solutions-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.erp-panel-heading{flex-direction:column;gap:10px}.erp-panel-heading>span{text-align:left}}
+@media(max-width:760px){.about-grid{grid-template-columns:1fr;gap:26px}.about h2{font-size:clamp(37px,8.25vw,64px)}.about-text{padding-top:23px}.erp-solutions-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.erp-solutions-grid .solution-card{min-height:75px}.erp-lab-strip{padding:14px 15px}}
+@media(max-width:390px){.about h2{font-size:clamp(35px,8.5vw,44px)}.erp-solutions-grid .solution-card{font-size:12px;padding:16px 20px 16px 12px}.erp-lab-flow span{font-size:8px;padding:8px 9px}}
+
 </style>
-<meta content="index,follow,max-image-preview:large" name="robots"/><link href="/monorojo/" rel="canonical"/><meta content="website" property="og:type"/><meta content="es_MX" property="og:locale"/><meta content="Mono Rojo®" property="og:site_name"/><meta content="Mono Rojo® — Diseño que impacta. Tecnología que resuelve." property="og:title"/><meta content="Sitios web, software y soluciones digitales. Conoce nuestros servicios y prueba el laboratorio interactivo." property="og:description"/><meta content="assets/mono-rojo-social.png" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Mono Rojo®: Diseño que impacta. Tecnología que resuelve." property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Mono Rojo® — Soluciones digitales" name="twitter:title"/><meta content="Diseño que impacta. Tecnología que resuelve." name="twitter:description"/><meta content="assets/mono-rojo-social.png" name="twitter:image"/><link href="assets/favicon-mono-rojo.png" rel="icon" type="image/png"/><link href="assets/favicon-mono-rojo.png" rel="apple-touch-icon"/><link href="assets/experiencias.css" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Mono Rojo","description":"Estudio de soluciones digitales: desarrollo web, software a medida, comercio digital y automatización.","email":"jonamoralesflores@gmail.com","contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+52-33-2513-8810","availableLanguage":"Spanish"}}</script></head>
+<meta content="index,follow,max-image-preview:large" name="robots"/><link href="https://jonamof.github.io/monorojo/" rel="canonical"/><meta content="website" property="og:type"/><meta content="https://jonamof.github.io/monorojo/" property="og:url"/><meta content="es_MX" property="og:locale"/><meta content="Mono Rojo®" property="og:site_name"/><meta content="Mono Rojo® — Diseño que impacta. Tecnología que resuelve." property="og:title"/><meta content="Sitios web, software y soluciones digitales. Conoce nuestros servicios y prueba el laboratorio interactivo." property="og:description"/><meta content="https://jonamof.github.io/monorojo/assets/mono-rojo-social.png" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Mono Rojo®: Diseño que impacta. Tecnología que resuelve." property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Mono Rojo® — Soluciones digitales" name="twitter:title"/><meta content="Diseño que impacta. Tecnología que resuelve." name="twitter:description"/><meta content="https://jonamof.github.io/monorojo/assets/mono-rojo-social.png" name="twitter:image"/><link href="assets/favicon-mono-rojo.png" rel="icon" type="image/png"/><link href="assets/favicon-mono-rojo.png" rel="apple-touch-icon"/><link href="assets/experiencias.css" rel="stylesheet"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Mono Rojo","description":"Estudio de soluciones digitales: desarrollo web, software a medida, comercio digital y automatización.","email":"jonamoralesflores@gmail.com","contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+52-33-2513-8810","availableLanguage":"Spanish"}}</script></head>
 <body>
 <div aria-hidden="true" id="progress"></div>
 <div aria-hidden="true" class="watermark" id="site-watermark"></div>
@@ -336,21 +378,16 @@ html{scroll-padding-top:105px}
 </div>
 </div>
 </section>
-<div class="marquee-shell"><div aria-label="Sitios web, sistemas a medida, automatización, tiendas en línea" class="marquee">
-<div aria-hidden="true" class="marquee-track">
-<span>Desarrollo web</span><b>✳</b><span>Software a medida</span><b>✳</b><span>Automatización</span><b>✳</b><span>Comercio digital</span><b>✳</b>
-<span>Desarrollo web</span><b>✳</b><span>Software a medida</span><b>✳</b><span>Automatización</span><b>✳</b><span>Comercio digital</span><b>✳</b>
-</div>
-</div></div>
+<div class="marquee-shell"><div class="marquee" aria-label="Innovación, tecnología, soluciones a medida, negocios que evolucionan, sistemas inteligentes e ideas sin límites"><div aria-hidden="true" class="marquee-track"><div class="marquee-set"><span>INNOVACIÓN</span><b aria-hidden="true">✳</b><span>TECNOLOGÍA</span><b aria-hidden="true">✳</b><span>SOLUCIONES A MEDIDA</span><b aria-hidden="true">✳</b><span>NEGOCIOS QUE EVOLUCIONAN</span><b aria-hidden="true">✳</b><span>SISTEMAS INTELIGENTES</span><b aria-hidden="true">✳</b><span>IDEAS SIN LÍMITES</span><b aria-hidden="true">✳</b></div><div class="marquee-set"><span>INNOVACIÓN</span><b aria-hidden="true">✳</b><span>TECNOLOGÍA</span><b aria-hidden="true">✳</b><span>SOLUCIONES A MEDIDA</span><b aria-hidden="true">✳</b><span>NEGOCIOS QUE EVOLUCIONAN</span><b aria-hidden="true">✳</b><span>SISTEMAS INTELIGENTES</span><b aria-hidden="true">✳</b><span>IDEAS SIN LÍMITES</span><b aria-hidden="true">✳</b></div></div></div></div>
 <section class="section" id="servicios">
 <div class="container">
 <div class="section-top reveal">
-<div><div class="section-num">(01) / LO QUE HACEMOS</div><h2 class="section-title">UNA IDEA.<br/>MUCHAS POSIBILIDADES.</h2></div>
+<div><div class="section-num"><span aria-hidden="true" class="section-bullet"></span>LO QUE HACEMOS</div><h2 class="section-title">UNA IDEA.<br/>MUCHAS POSIBILIDADES.</h2></div>
 <p class="section-desc">Diseño, tecnología y soluciones para que tu negocio destaque, venda y funcione mejor.</p>
 </div>
 <div class="services">
 <article class="service reveal"><button aria-controls="service-web" aria-expanded="true" class="service-btn" type="button"><span class="service-n">01/</span><span class="service-name">Desarrollo web</span><span class="service-type">Diseño + estrategia</span><span aria-hidden="true" class="service-plus">+</span></button><div class="service-body" id="service-web"><strong>Tu marca merece destacar.</strong><p>Sitios web rápidos, modernos y diseñados para convertir visitas en oportunidades.</p><a href="https://wa.me/523325138810?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Mono%20Rojo%20y%20me%20interesa%20desarrollar%20un%20sitio%20web%20para%20mi%20negocio." rel="noopener noreferrer" target="_blank">QUIERO MI PÁGINA ↗</a></div></article>
-<article class="service reveal"><button aria-controls="service-software" aria-expanded="false" class="service-btn" type="button"><span class="service-n">02/</span><span class="service-name">Software a medida</span><span class="service-type">Sistemas + operación</span><span aria-hidden="true" class="service-plus">+</span></button><div class="service-body" hidden="" id="service-software"><strong>Tu negocio. Tus reglas.</strong><p>Sistemas y aplicaciones que se adaptan a tu operación, no al revés.</p><a href="https://wa.me/523325138810?text=Hola%2C%20quiero%20conocer%20c%C3%B3mo%20pueden%20ayudarme%20a%20desarrollar%20un%20sistema%20personalizado." rel="noopener noreferrer" target="_blank">NECESITO UN SISTEMA ↗</a></div></article>
+<article class="service reveal"><button aria-controls="service-software" aria-expanded="false" class="service-btn" type="button"><span class="service-n">02/</span><span class="service-name">Software a medida</span><span class="service-type">Sistemas + operación</span><span aria-hidden="true" class="service-plus">+</span></button><div class="service-body" hidden="" id="service-software"><strong>TODAS TUS ÁREAS. UN SOLO SISTEMA.</strong><p>Conectamos áreas, datos y procesos: desde módulos independientes hasta un ERP integral diseñado según el alcance de tu proyecto.</p><div class="erp-service-chips" aria-label="Áreas donde podemos desarrollar soluciones"><span>Finanzas</span><span>Compras</span><span>Ventas</span><span>Inventarios</span><span>Producción</span><span>Logística</span><span>RR. HH.</span><span>Dirección</span><span>+ más áreas</span></div><small class="service-scope">Cada solución se analiza y cotiza según necesidades y alcance.</small><a href="https://wa.me/523325138810?text=Hola%2C%20quiero%20conocer%20c%C3%B3mo%20pueden%20ayudarme%20a%20desarrollar%20un%20sistema%20personalizado." rel="noopener noreferrer" target="_blank">NECESITO UN SISTEMA ↗</a></div></article>
 <article class="service reveal"><button aria-controls="service-commerce" aria-expanded="false" class="service-btn" type="button"><span class="service-n">03/</span><span class="service-name">Comercio digital</span><span class="service-type">Ventas + plataformas</span><span aria-hidden="true" class="service-plus">+</span></button><div class="service-body" hidden="" id="service-commerce"><strong>Haz que tu negocio venda más.</strong><p>Tiendas en línea y plataformas comerciales que conectan productos con clientes.</p><a href="https://wa.me/523325138810?text=Hola%2C%20me%20interesa%20crear%20una%20tienda%20en%20l%C3%ADnea%20con%20Mono%20Rojo." rel="noopener noreferrer" target="_blank">QUIERO VENDER EN LÍNEA ↗</a></div></article>
 <article class="service reveal"><button aria-controls="service-automation" aria-expanded="false" class="service-btn" type="button"><span class="service-n">04/</span><span class="service-name">Automatización e IA</span><span class="service-type">Procesos + IA</span><span aria-hidden="true" class="service-plus">+</span></button><div class="service-body" hidden="" id="service-automation"><strong>Menos trabajo manual. Más resultados.</strong><p>Conectamos herramientas y automatizamos procesos para que tu negocio avance.</p><a href="https://wa.me/523325138810?text=Hola%2C%20quiero%20saber%20si%20pueden%20ayudarme%20a%20automatizar%20procesos%20de%20mi%20negocio." rel="noopener noreferrer" target="_blank">QUIERO AUTOMATIZAR ↗</a></div></article>
 </div>
@@ -359,9 +396,10 @@ html{scroll-padding-top:105px}
 <section class="section lab" id="laboratorio">
 <div class="container">
 <div class="section-top reveal">
-<div><div class="section-num">(02) / NUESTRO LABORATORIO</div><h2 class="section-title">IDEAS EN<br/>MOVIMIENTO.</h2></div>
+<div><div class="section-num"><span aria-hidden="true" class="section-bullet"></span>NUESTRO LABORATORIO</div><h2 class="section-title">IDEAS EN<br/>MOVIMIENTO.</h2></div>
 <p class="section-desc">Experimenta con datos ficticios. Cambia valores, crea registros y descubre soluciones en acción.</p>
 </div>
+<div class="erp-lab-strip reveal"><div><strong>MONO ERP <span>— EXPERIENCIA INTERACTIVA</span></strong><p>Explora ventas, inventario e indicadores como parte de una visión empresarial integral.</p></div><div class="erp-lab-flow" aria-label="Posible flujo empresarial conceptual"><span>VENTAS</span><i aria-hidden="true">↗</i><span>INVENTARIOS</span><i aria-hidden="true">↗</i><span>INDICADORES</span></div><small>Conexión conceptual · demos con datos independientes</small></div>
 <div aria-label="Tipo de demostración" class="lab-tabs reveal" role="tablist"><button aria-controls="lab-preview" aria-selected="true" class="tab" data-demo="web" id="tab-web" role="tab" tabindex="0" type="button">00 / Web conceptual</button><button aria-controls="lab-preview" aria-selected="false" class="tab" data-demo="sales" id="tab-sales" role="tab" tabindex="-1" type="button">01 / Ventas</button><button aria-controls="lab-preview" aria-selected="false" class="tab" data-demo="inventory" id="tab-inventory" role="tab" tabindex="-1" type="button">02 / Inventarios</button><button aria-controls="lab-preview" aria-selected="false" class="tab" data-demo="quotes" id="tab-quotes" role="tab" tabindex="-1" type="button">03 / Cotizador</button><button aria-controls="lab-preview" aria-selected="false" class="tab" data-demo="automation" id="tab-automation" role="tab" tabindex="-1" type="button">04 / Automatización</button></div>
 <div aria-labelledby="tab-web" class="lab-viewport reveal" id="lab-preview" role="tabpanel">
 <div class="lab-info"><div><div class="small" id="lab-code">Concepto / 00</div><h3 id="lab-title">Una web que habla por ti.</h3><p id="lab-desc">Diseño editorial, mensaje claro y un recorrido que guía hacia el contacto o la compra.</p></div><div class="note">↖ Cambia de pestaña para explorar</div></div>
@@ -374,7 +412,7 @@ html{scroll-padding-top:105px}
 </section>
 <section class="section solutions-section" id="posibilidades">
 <div class="container">
-<div class="section-top reveal"><div><div class="section-num">(03) / QUÉ PODEMOS CREAR</div><h2 class="section-title">SOLUCIONES PARA<br/>IDEAS REALES.</h2></div><p class="section-desc">Selecciona una categoría y descubre lo que podemos desarrollar para ti.</p></div>
+<div class="section-top reveal"><div><div class="section-num"><span aria-hidden="true" class="section-bullet"></span>QUÉ PODEMOS CREAR</div><h2 class="section-title">SOLUCIONES PARA<br/>IDEAS REALES.</h2></div><p class="section-desc">Selecciona una categoría y descubre lo que podemos desarrollar para ti.</p></div>
 <div aria-label="Categorías de soluciones" class="solutions-tabs reveal" role="tablist">
 <button aria-controls="solutions-group-web" aria-selected="true" class="solution-tab" data-solution="web" id="solutions-tab-web" role="tab" tabindex="0" type="button">01 / Desarrollo web</button>
 <button aria-controls="solutions-group-software" aria-selected="false" class="solution-tab" data-solution="software" id="solutions-tab-software" role="tab" tabindex="-1" type="button">02 / Software a medida</button>
@@ -394,17 +432,21 @@ html{scroll-padding-top:105px}
 </ul>
 </div>
 <div aria-labelledby="solutions-tab-software" class="solutions-group" hidden="" id="solutions-group-software" role="tabpanel" tabindex="0">
-<ul class="solutions-grid">
-<li class="solution-card">Sistemas de inventarios</li>
-<li class="solution-card">Control de compras</li>
-<li class="solution-card">Gestión de proveedores</li>
-<li class="solution-card">Sistemas de cotizaciones</li>
-<li class="solution-card">Paneles administrativos</li>
-<li class="solution-card">CRM personalizados</li>
-<li class="solution-card">Control de proyectos</li>
-<li class="solution-card">Aplicaciones web internas</li>
-<li class="solution-card">Sistemas de órdenes de trabajo</li>
+<div class="erp-panel-heading"><div><strong>TODAS TUS ÁREAS. UN SOLO SISTEMA.</strong><p>Desde un módulo específico hasta una plataforma empresarial integral.</p></div><span>DESARROLLO A MEDIDA · CONCEPTO</span></div>
+<ul class="solutions-grid erp-solutions-grid">
+<li class="solution-card">Administración y finanzas</li>
+<li class="solution-card">Contabilidad y facturación</li>
+<li class="solution-card">Compras y abastecimiento</li>
+<li class="solution-card">Ventas y CRM</li>
+<li class="solution-card">Inventarios y almacenes</li>
+<li class="solution-card">Producción</li>
+<li class="solution-card">Logística y distribución</li>
+<li class="solution-card">Recursos humanos</li>
+<li class="solution-card">Gestión de proyectos</li>
+<li class="solution-card">Servicio al cliente</li>
+<li class="solution-card">Dirección e indicadores</li>
 </ul>
+<p class="erp-disclaimer">Áreas posibles de desarrollo. No representa un ERP ya implementado.</p>
 </div>
 <div aria-labelledby="solutions-tab-commerce" class="solutions-group" hidden="" id="solutions-group-commerce" role="tabpanel" tabindex="0">
 <ul class="solutions-grid">
@@ -434,13 +476,13 @@ html{scroll-padding-top:105px}
 </section>
 <section class="section about" id="nosotros">
 <div class="container about-grid">
-<div class="reveal"><div class="section-num">(04) / LO QUE NOS HACE DIFERENTES</div><h2>MÁS QUE<br/>CÓDIGO.<br/><em>ENTENDEMOS<br/>NEGOCIOS.</em></h2></div>
-<div class="about-text reveal"><p>Combinamos diseño, tecnología y visión empresarial para crear soluciones que realmente necesitas.</p><p class="about-kicker">Sin complicaciones. Sin soluciones genéricas.</p><div class="about-chips"><span>Visión empresarial</span><span>Diseño</span><span>Tecnología</span><span>Comunicación directa</span></div></div>
+<div class="reveal"><div class="section-num"><span aria-hidden="true" class="section-bullet"></span>LO QUE NOS HACE DIFERENTES</div><h2>ENTENDEMOS<br/>TU NEGOCIO.<br/><em>CONSTRUIMOS<br/>SU FUTURO.</em></h2></div>
+<div class="about-text reveal"><p class="about-claim">MÁS QUE CÓDIGO. ENTENDEMOS NEGOCIOS.</p><p>Combinamos experiencia empresarial y tecnología para conectar personas, procesos y áreas de tu organización.</p><div class="enterprise-link" aria-label="Perspectiva integral de la empresa"><span>PERSONAS</span><i aria-hidden="true"></i><span>PROCESOS</span><i aria-hidden="true"></i><span>TECNOLOGÍA</span></div><p class="about-kicker">DESDE TU PRIMER SITIO WEB HASTA UN SISTEMA EMPRESARIAL INTEGRAL.</p></div>
 </div>
 </section>
 <section class="section process" id="proceso">
 <div class="container">
-<div class="section-top reveal"><div><div class="section-num">(05) / NUESTRO PROCESO</div><h2 class="section-title">ASÍ LO<br/>HACEMOS.</h2></div><p class="section-desc">De tu idea a una solución que funciona. Sin vueltas innecesarias.</p></div>
+<div class="section-top reveal"><div><div class="section-num"><span aria-hidden="true" class="section-bullet"></span>NUESTRO PROCESO</div><h2 class="section-title">ASÍ LO<br/>HACEMOS.</h2></div><p class="section-desc">De tu idea a una solución que funciona. Sin vueltas innecesarias.</p></div>
 <div class="process-grid">
 <article class="process-step reveal"><span class="process-number">01 / ESCUCHAMOS</span><h3>ENTENDEMOS.</h3><p>Escuchamos tus ideas y desafíos.</p></article>
 <article class="process-step reveal"><span class="process-number">02 / CONSTRUIMOS</span><h3>CREAMOS.</h3><p>Diseñamos y desarrollamos tu solución.</p></article>
@@ -461,9 +503,8 @@ html{scroll-padding-top:105px}
 <label>Tu correo <input autocomplete="email" id="contact-email" maxlength="160" name="email" placeholder="tu@correo.com" required="" type="email"/></label>
 <label class="wide">¿Qué necesitas? <select id="contact-service" name="servicio"><option>Desarrollo web</option><option>Software a medida</option><option>Comercio digital</option><option>Automatización e IA</option><option>Necesito orientación</option></select></label>
 <label class="wide">Tu idea <textarea id="contact-message" maxlength="1200" minlength="10" name="mensaje" placeholder="¿Qué necesitas y qué te gustaría mejorar?" required=""></textarea></label>
-<label class="privacy-choice"><input id="privacy-accept" name="acepto_privacidad" required="" type="checkbox" value="Sí"/><span>He leído el <a href="privacy.html" rel="noopener noreferrer" target="_blank">aviso de privacidad</a> y acepto el tratamiento de mis datos para responder a mi solicitud.</span></label><div class="wide contact-actions"><button class="button" type="submit">ENVIAR PROYECTO ↗</button><div class="c-hint" id="form-explanation">Enviaremos tu solicitud mediante FormSubmit. No garantizamos recepción hasta confirmar el servicio; también puedes escribir por WhatsApp o correo.</div></div>
+<label class="privacy-choice"><input id="privacy-accept" name="acepto_privacidad" required="" type="checkbox" value="Sí"/><span>He leído el <a href="privacy.html" rel="noopener noreferrer" target="_blank">aviso de privacidad</a> y acepto el tratamiento de mis datos para responder a mi solicitud.</span></label><div class="wide contact-actions"><button class="button" type="submit">ENVIAR PROYECTO ↗</button><div class="c-hint" id="form-explanation">Tu solicitud se envía mediante FormSubmit. Si prefieres atención directa, usa el botón de WhatsApp.</div></div>
 <p aria-live="polite" class="form-status wide" hidden="" id="form-status" role="status"></p></form>
-<div class="contact-shortcuts reveal"><a href="mailto:jonamoralesflores@gmail.com">jonamoralesflores@gmail.com ↗</a><a href="https://wa.me/523325138810?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Mono%20Rojo%20y%20me%20gustar%C3%ADa%20platicar%20sobre%20un%20proyecto." rel="noopener noreferrer" target="_blank">WhatsApp: +52 33 2513 8810 ↗</a></div>
 <div aria-hidden="true" class="bottom-giant">MONO ROJO</div>
 </div>
 </section>

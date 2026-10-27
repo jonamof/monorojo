@@ -1,91 +1,53 @@
-# MONO ROJO® — V5 / EXPERIENCIA INTERACTIVA
+# MONO ROJO® — V6 / Evolución comercial
 
 **Diseño que impacta. Tecnología que resuelve.**
 
-Versión construida **sobre V4**, manteniendo su estructura general, identidad, animaciones, símbolo original, marca de agua fija, menú, scroll y secciones existentes. Sin frameworks, sin chatbot, sin IA en ejecución, sin APIs de pago y sin backend propio.
+Esta actualización se preparó sobre la V5 del proyecto existente, sin rediseñar la arquitectura HTML/CSS/JavaScript. Conserva cuatro servicios, la navegación, el logo original, la marca de agua fija, animaciones, responsive, el laboratorio completo y el formulario de contacto. Las funciones nuevas funcionan sin APIs de pago.
 
-## Archivos
+## Cambios realizados
 
-- `index.html`: página principal; contiene estructura HTML, estilo y comportamiento heredados de V4.
-- `assets/laboratorio.js`: demostraciones 100% locales de ventas, inventarios, cotización y automatización.
-- `assets/sitio.js`: filtros por giro y envío AJAX real del formulario (FormSubmit).
-- `assets/experiencias.css`: estilos adicionales adaptados a los componentes y colores anteriores.
-- `assets/mono-rojo-simbolo-transparente.png`: símbolo de líneas **original** extraído, usado como marca de agua fija.
-- `assets/logo-original-mono-rojo.png`: archivo original de referencia, sin redibujar.
-- `assets/mono-rojo-social.png`: imagen 1200 × 630 para vista previa de redes.
-- `assets/favicon-mono-rojo.png`: favicon basado en el símbolo original.
-- `privacy.html`: aviso de privacidad preliminar, debe revisarse jurídicamente para uso definitivo.
-- `.nojekyll`: compatibilidad con GitHub Pages.
+- Los cinco encabezados de sección ya no llevan numerales entre paréntesis: usan un punto minimalista en el estilo existente. Se conservan numerales funcionales, pasos y etiquetas de las demos.
+- Se eliminó el bloque visible con correo y teléfono de la sección de contacto. Los destinos de `mailto:` y `wa.me` siguen dentro de enlaces y configuración técnica. El aviso de privacidad también muestra un enlace «escríbenos por correo» en lugar de imprimir la dirección.
+- La banda roja conserva su inclinación y se mueve con **dos grupos idénticos** para repetir de forma continua: Innovación, Tecnología, Soluciones a medida, Negocios que evolucionan, Sistemas inteligentes e Ideas sin límites. Se inmoviliza con `prefers-reduced-motion`.
+- La sección Nosotros resalta el entendimiento de operaciones empresariales, sin limitarlo a compras o inventarios. Preserva la frase «Más que código. Entendemos negocios.».
+- Software a medida presenta el alcance desde módulos a medida hasta posibles plataformas ERP integrales. Se muestran áreas de negocio sin fingir clientes o implantaciones.
+- La categoría Software de la sección Soluciones incluye **11 áreas empresariales** y aclara que son posibilidades de desarrollo, no trabajos ejecutados.
+- El laboratorio incorpora el rótulo **MONO ERP — Experiencia interactiva** y un diagrama de relación conceptual entre ventas, inventarios e indicadores. **No se implementó un traspaso ficticio de datos**: cada demostración mantiene sus datos independientes.
+- Metadatos Open Graph, Twitter y canonical apuntan a la dirección pública existente `https://jonamof.github.io/monorojo/`. Al migrar a dominio propio hay que actualizarlos.
 
-## Publicar o actualizar en GitHub Pages
+## Archivos del proyecto
 
-1. Descomprime el ZIP. Sube **el CONTENIDO de la carpeta**, no la carpeta exterior, a la raíz de tu repositorio `monorojo`: deben quedar `index.html`, `privacy.html` y `assets/` en la raíz.
-2. En GitHub, selecciona **Settings → Pages → Deploy from a branch → main → /(root)**.
-3. Revisa `https://TU-USUARIO.github.io/monorojo/` usando tu usuario real. Los links a los recursos son relativos y no dependen de estar publicados en la raíz del dominio.
-4. Abre cada pestaña del laboratorio y prueba los botones personalizados de WhatsApp, el menú, las FAQ y el filtro por giro. El formulario debe probarse en la URL publicada, NO abriendo `index.html` como archivo local.
+- `index.html` — Página principal y estilos complementarios V6.
+- `assets/experiencias.css` — Estilos existentes de las demostraciones; sin modificaciones funcionales.
+- `assets/laboratorio.js` — Ventas, inventarios, cotizador y automatización local; conservado de V5.
+- `assets/sitio.js` — Filtros comerciales y envío FormSubmit; conservado de V5.
+- `assets/logo-original-mono-rojo.png` y `assets/mono-rojo-simbolo-transparente.png` — Identidad original y marca de agua.
+- `assets/favicon-mono-rojo.png`, `assets/mono-rojo-social.png` — Favicon y miniatura social.
+- `privacy.html` — Información de privacidad; se conservó el medio de contacto, pero se ocultó la dirección como texto.
+- `.nojekyll` — Archivo oculto necesario para respetar la configuración de GitHub Pages.
+- `PRUEBAS.md` — Qué se comprobó realmente y qué sigue pendiente.
 
-### Una configuración SEO necesaria cuando conozcas la URL pública
+## Actualizar GitHub Pages
 
-No recibí el usuario real de GitHub Pages ni un dominio propio. **No inventé una URL ni un dominio.** Para una vista previa consistente en WhatsApp/Instagram/Facebook, edita `index.html` después de publicarlo:
+1. Descarga el ZIP de V6 y **extráelo**, no subas el ZIP directamente.
+2. Abre https://github.com/jonamof/monorojo y asegúrate de estar en la rama `main` y en la raíz del repositorio.
+3. Haz clic en **Add file → Upload files**.
+4. Desde el Explorador de Windows, selecciona todo el **contenido de la carpeta** extraída: `index.html`, `privacy.html`, `README.md`, `PRUEBAS.md`, la carpeta `assets` y, si Windows lo muestra, `.nojekyll`. Arrastra la selección a la pantalla de GitHub. Mantén las rutas internas de `assets/`.
+5. Comprueba que GitHub muestre `assets/experiencias.css`, `assets/laboratorio.js`, `assets/sitio.js` y las imágenes; además, `index.html` y `privacy.html` en la raíz. **No borres el repositorio actual.**
+6. Escribe el comentario `Mono Rojo V6 - mejora comercial y ERP conceptual`, selecciona **Commit directly to the main branch** y haz clic en **Commit changes**.
+7. Comprueba https://jonamof.github.io/monorojo/ . Si ves la versión anterior, actualiza con `Ctrl + F5` o abre una ventana privada después del despliegue.
+8. Si Github Pages no publica, revisa **Settings → Pages**. El despliegue debe tomar la rama `main` y la carpeta `/(root)`, si usas la publicación directa desde rama.
 
-- Cambia `<meta property="og:image" content="assets/mono-rojo-social.png">` por una **URL HTTPS absoluta**: `https://TU-USUARIO.github.io/monorojo/assets/mono-rojo-social.png`.
-- Cambia `<meta name="twitter:image" content="assets/mono-rojo-social.png">` de la misma forma.
-- La etiqueta `<link rel="canonical" href="/monorojo/">` funciona como dirección de proyecto bajo `/monorojo/`, pero se recomienda sustituirla por la URL HTTPS definitiva: `https://TU-USUARIO.github.io/monorojo/`.
-- **Opcional:** agrega `<meta property="og:url" content="https://TU-USUARIO.github.io/monorojo/">` usando la URL real.
+**Importante:** si el repositorio ya contiene `index.html`, GitHub sustituye ese archivo al guardar la carga; no renombres el nuevo index.
 
-Una imagen Open Graph con dirección relativa puede no ser interpretada por todos los robots sociales, por eso se documenta la sustitución. Cuando se cambie a un dominio `.com` o `.mx`, sustituye las URLs anteriores, actualiza canonical y publica el sitemap bajo ese dominio si lo necesitas. **No incluimos sitemap.xml ni robots.txt** porque el sitio aún no tiene una dirección de dominio absoluta identificada; además, un `robots.txt` dentro de un subdirectorio `/monorojo/` no sustituye el archivo robots de la raíz del host.
+## Contacto y verificación externa
 
-## Laboratorio: cuatro demostraciones reales (datos ficticios)
+El formulario sigue configurado para `jonamoralesflores@gmail.com` mediante FormSubmit; el envío AJAX apunta a `https://formsubmit.co/ajax/jonamoralesflores@gmail.com` y el formulario HTML a `https://formsubmit.co/jonamoralesflores@gmail.com`. **El destinatario debe estar en el código para que FormSubmit funcione**, pero no se muestra como bloque de texto en la interfaz. Los botones comerciales y flotante abren WhatsApp mediante `https://wa.me/523325138810`, con los mensajes prellenados que ya existían.
 
-**00. Web conceptual:** se conserva el concepto visual que existía en V4, ahora etiquetado como tal.
+**No se ha realizado un envío real desde la versión V6 publicada.** Comprueba que FormSubmit esté activado y que recibas un mensaje de prueba en la bandeja de entrada (o spam). Sin esa comprobación no puede asegurarse la entrega. El aviso de privacidad sigue siendo informativo y debe revisarse jurídicamente para uso definitivo.
 
-**01. Ventas:** inicia con 12 ventas de $2,500 MXN = $30,000 MXN. Se pueden agregar, editar o eliminar. Indicadores y gráfica cambian automáticamente. Hay botón de reinicio.
+## Limitaciones
 
-**02. Inventarios:** productos ficticios, altas, búsqueda, modificación de cantidades, entradas/salidas, alertas cuando existencias <= 5, eliminación, reinicio e indicadores.
-
-**03. Cotizaciones:** catálogo de conceptos ficticios, altas y bajas, edición de cantidades y precios, IVA entre 0 y 30%, subtotal y total calculado en centavos para evitar errores comunes con decimales. Los importes son **ejemplos**, no tarifas comerciales.
-
-**04. Automatización:** solicitud ficticia, paso a paso y estados de avance. **No** envía correos, notificaciones ni datos a servicios externos.
-
-Los datos de las demostraciones viven en la memoria del navegador y se reinician al refrescar. Las demostraciones no comparten datos con el formulario de contacto. Los botones bajo el Laboratorio abren WhatsApp con el nombre de la solución explorada.
-
-## Contacto: FormSubmit gratis
-
-Configurado para enviar solicitudes a **jonamoralesflores@gmail.com**, con nombre, correo, servicio, descripción y consentimiento de privacidad. Usa el endpoint `https://formsubmit.co/ajax/jonamoralesflores@gmail.com` mediante POST, con el formulario HTML normal como alternativa si JavaScript está desactivado. No incluye credenciales, tokens privados ni falsos envíos de correo.
-
-**Activación y verificación pendientes:**
-
-1. Publica el sitio en GitHub Pages.
-2. Completa el formulario con datos de prueba.
-3. Revisa `jonamoralesflores@gmail.com`, incluido spam, y **confirma el correo de activación** que envía FormSubmit.
-4. Envía otra solicitud real desde la página publicada y verifica que **llegue al buzón**. Hasta hacerlo, nadie puede garantizar la recepción.
-5. Si falla, el visitante verá un mensaje de error, tendrá a mano WhatsApp y correo para contactar directamente.
-
-El código distingue el `success: "true"` del `success: "false"` en la respuesta AJAX; un HTTP 200 no significa por sí solo que el envío fue aceptado. Un resultado exitoso significa solo que FormSubmit lo aceptó, **no** que se haya comprobado el correo recibido. FormSubmit anuncia formularios y envíos ilimitados para su servicio base; su API opcional de archivo histórico se limita a **5 accesos por día** y el historial se conserva **30 días**. Las reglas de servicio pueden cambiar. Ver: https://formsubmit.co/documentation y https://formsubmit.co/help.
-
-### Privacidad
-
-Incluimos aceptación explícita y enlace a `privacy.html` con el alcance conocido del formulario y FormSubmit. Es un borrador informativo, **no una validación jurídica**. Verifica su adecuación a tu régimen legal y datos del responsable antes de campañas de difusión.
-
-## Comprobaciones realizadas
-
-- Sintaxis de ambos archivos JavaScript evaluada con Node sin errores.
-- Render e interacciones probados en Chromium en tamaños **320, 390, 768 y 1440 px**: sin errores de JavaScript ni scroll horizontal después de la optimización.
-- Ventas iniciales **12 / $30,000**, nueva venta, edición, eliminación y reinicio: probados.
-- Inventario inicial, alerta de existencias, nuevo producto, búsqueda, entrada y reinicio: probados.
-- Cotizador: subtotal, IVA del 16%, IVA 0%, agregado de líneas y reinicio: probados.
-- Automatización: secuencia de las cuatro etapas hasta **PROCESO COMPLETADO**: probada.
-- Filtros por sector: interacción probada.
-- Formulario: validaciones HTML y respuesta simulada de aceptación AJAX probadas. No se realizó un envío externo real; FormSubmit no fue activado por nosotros.
-
-### Pendiente de pruebas externas
-
-- Confirmación de activación y **recepción efectiva** del correo en Gmail.
-- Vista previa social tras actualizar las URL absolutas de Open Graph.
-- Indexación real en Google después de publicar.
-- Revisión legal definitiva del aviso de privacidad.
-- Validación en Safari/iPhone y Android físicos (se probó Chromium con viewports móviles, no dispositivos reales).
-
-## Diseño y costes
-
-Mantiene las fuentes Archivo Black + DM Sans (Google Fonts), scroll, banda animada, interfaz desplegable, efectos del logo, marca de agua con transparencia y WhatsApp fijo. Los scripts locales no hacen solicitudes de red. Google Fonts y FormSubmit son servicios externos, pero no hay funciones de IA de pago ni suscripciones que nosotros hayamos contratado. Todas las demos funcionan offline una vez cargado el HTML y recursos.
+- Las cuatro demostraciones son locales: no comparten registros ni inventarios entre ellas, ni utilizan base de datos. El flujo MONO ERP es una representación conceptual, no un ERP implementado.
+- Google Fonts y FormSubmit son servicios externos ya existentes, pero esta versión **no requiere suscripciones nuevas** ni consumo de APIs de IA.
+- Después de migrar a un `.com` o `.mx`, modifica los enlaces `canonical`, `og:url`, `og:image` y `twitter:image` en `index.html`.
