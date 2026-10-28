@@ -1,4 +1,4 @@
-/* MONO ROJO LAB — simulaciones locales, sin servicios ni dependencias externas. */
+/* OSO ROJO LAB — simulaciones locales, sin servicios ni dependencias externas. */
 (()=>{
 'use strict';
 const $=(q,root=document)=>root.querySelector(q);
@@ -22,7 +22,7 @@ const states={sales:Array.from({length:12},(_,i)=>({id:i+1,label:`Venta ${String
  quotes:[{id:1,label:'Sitio informativo',qty:1,cents:450000}],quoteNext:2,vat:16};
 let current='web', timers=[], flowId=0;
 const menu=$$('.lab-tabs .tab');
-function demoAction(){const url=new URL('https://wa.me/523325138810');url.searchParams.set('text',`Hola, estuve explorando la demostración de ${names[current]} en Mono Rojo y me gustaría cotizar una solución similar para mi negocio.`);const a=$('#lab-action');a.href=url.toString();a.setAttribute('aria-label',`Cotizar una solución similar a ${names[current]} por WhatsApp`);}
+function demoAction(){const url=new URL('https://wa.me/523325138810');url.searchParams.set('text',`Hola, estuve explorando la demostración de ${names[current]} en Oso Rojo y me gustaría cotizar una solución similar para mi negocio.`);const a=$('#lab-action');a.href=url.toString();a.setAttribute('aria-label',`Cotizar una solución similar a ${names[current]} por WhatsApp`);}
 function switchTo(key,focus=false){
  if(!metadata[key])return;
  timers.forEach(clearTimeout);timers=[];flowId++;

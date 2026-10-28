@@ -1,24 +1,21 @@
-# MONO ROJO V6 — PRUEBAS Y PENDIENTES
+# OSO ROJO V7 — verificación
 
-## Comprobado (27 de octubre de 2026)
+## Comprobaciones ejecutadas
 
-- Código de ambos JavaScript externos validado con `node --check`.
-- HTML inspeccionado con BeautifulSoup: cinco encabezados sin `(01)`, `(02)` ni similares, cuatro servicios conservados, cinco pestañas de laboratorio conservadas, marca de agua fija presente, recursos locales existentes y destinos de FormSubmit intactos.
-- Banda con dos secuencias de contenido idénticas y regla `prefers-reduced-motion`.
-- No hay direcciones de correo ni número de teléfono **como texto visible** en la página principal ni en el aviso de privacidad. Se mantienen en rutas y enlaces técnicos necesarios.
-- Renderizado de los archivos HTML/CSS/JS en Chromium mediante **inyección de los recursos locales en memoria**, ya que el acceso `file://` estaba bloqueado por la política del entorno. Viewports 320, 390, 768 y 1440 px: sin errores de JavaScript observados ni desbordamiento horizontal.
-- Acordeón de Software a medida expande con sus áreas.
-- Panel de ventas: total inicial $30,000.00; tras agregar una venta de $100, total $30,100.00.
-- Inventarios: se creó un producto de prueba con 3 existencias.
-- Cotizador: total inicial con IVA 16% $5,220.00; al pasar IVA a 0%, $4,500.00.
-- Automatización: la simulación llegó a «PROCESO COMPLETADO».
-- Se verificaron por inspección las rutas de los archivos y las cadenas técnicas de los enlaces WhatsApp. No se intentó enviar mensajes reales.
-- `assets/laboratorio.js` y `assets/sitio.js` se conservaron de la V5 sin cambios funcionales.
+- Se analizó la V6 original disponible en el ZIP y se partió de su `index.html`, `privacy.html` y scripts originales.
+- Identidad en portada, navegación, formularios, pie, SEO, social y WhatsApp actualizada a **Oso Rojo**; concepto **OSO ERP**. No aparece el signo de marca registrada ®.
+- Se reemplazaron ambos logos embebidos del mono por una referencia al PNG original del oso suministrado; se eliminaron los activos antiguos del mono.
+- El archivo de marca de agua roja conserva las líneas del oso y tiene fondo transparente; se comprobó su canal alfa y una composición sobre fondo negro.
+- CSS comprobado en navegador: marca de agua fija y roja, con opacidad discreta y sin interacción; los cinco selectores del laboratorio están presentes.
+- En Chromium se comprobaron anchos de **1440, 768, 390 y 320 px** (sin desbordamiento horizontal ni errores JavaScript), utilizando una vista de prueba con los mismos HTML/CSS/JS y recursos visuales reducidos únicamente para superar restricciones de navegación del entorno.
+- En Chromium: 12 ventas × $2,500 = $30,000; agregar $1,000 produce 13 ventas / $31,000. Se agregó un producto con 3 unidades y el indicador de existencias bajas aumentó; IVA 16% sobre $4,500 = $5,220, e IVA 0% = $4,500. La simulación llega al estado PROCESO COMPLETADO.
+- Se verificaron referencias de `assets/`, rutas técnicas de `/monorojo/` y destinos `wa.me/523325138810`, incluido el texto de Oso Rojo en el laboratorio.
+- El formulario conserva `https://formsubmit.co/jonamoralesflores@gmail.com` y su envío mediante JavaScript en `assets/sitio.js`.
 
-## No comprobado externamente
+## Pendientes externos
 
-- Activación de FormSubmit y entrega real en Gmail: requiere el envío real desde el sitio público y validación del destinatario.
-- Apertura de WhatsApp en un teléfono físico y envío del mensaje precargado: requiere prueba del usuario.
-- Caché y despliegue final de GitHub Pages después de sustituir V5 por V6: aún no se realizó.
-- Generación de miniaturas por WhatsApp/Facebook e indexación de la versión V6 en buscadores: depende de la publicación y las cachés de cada plataforma.
-- Safari/iOS y navegadores móviles físicos: se evaluaron viewports móviles en Chromium, no dispositivos reales.
+- No se ha publicado en el repositorio real de GitHub ni probado una respuesta HTTP del sitio después del despliegue V7.
+- No se realizó envío de correo real con FormSubmit ni confirmación de recepción: requiere prueba con la página pública, activación/autorización de FormSubmit y consulta del buzón.
+- No se inició una conversación real de WhatsApp ni se puede confirmar el funcionamiento de la app del destinatario.
+- La vista social depende de que el sitio publicado sirva el archivo y que las redes refresquen su caché.
+- No se hizo una auditoría de rendimiento de red real ni revisión en teléfonos físicos.
